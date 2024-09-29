@@ -26,7 +26,7 @@ const HeaderComponent = ({ latestValue, diff, percentage }) => {
         }`}
       >
         {diff < 0 ? formatNumber(diff) : "+ " + formatNumber(diff)} (
-        {percentage.toFixed(2)}%)
+        {Math.abs(percentage.toFixed(2))}%)
       </h1>
     </>
   );

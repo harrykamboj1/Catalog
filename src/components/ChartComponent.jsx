@@ -12,7 +12,7 @@ import CustomToolTip from "./CustomToolTip";
 
 const ChartComponent = ({ data }) => {
   return (
-    <div className="pt-[28px] pr-[51px] pb-[60px]">
+    <div className="pt-[28px] pr-[51px] pb-[10px]">
       <ResponsiveContainer width={839} height={343}>
         <AreaChart data={data}>
           <defs>

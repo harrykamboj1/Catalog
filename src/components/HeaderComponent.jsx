@@ -4,7 +4,7 @@ import { formatNumber } from "../utils/format";
 const HeaderComponent = ({ latestValue }) => {
   return (
     <>
-      <div className="flex justify-start items-center pt-[70px] ">
+      <div className="flex justify-start items-center pt-[50px] ">
         <h1
           style={{ fontWeight: 500 }}
           className="text-[#1A243A] text-[70px] font-customFont leading-[88.56px] w-[269px] h-[88px]  "

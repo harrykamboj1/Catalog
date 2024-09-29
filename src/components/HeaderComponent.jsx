@@ -1,7 +1,7 @@
 import React from "react";
 import { formatNumber } from "../utils/format";
 
-const HeaderComponent = ({ latestValue }) => {
+const HeaderComponent = ({ latestValue, diff, percentage }) => {
   return (
     <>
       <div className="flex justify-start items-center pt-[50px] ">
@@ -21,9 +21,12 @@ const HeaderComponent = ({ latestValue }) => {
 
       <h1
         style={{ fontWeight: 500 }}
-        className="pt-[4px] text-[18px] font-customFont leading-[22.77px] text-[#67BF6B]"
+        className={`pt-[4px] text-[18px] font-customFont leading-[22.77px]  ${
+          diff < 0 ? "text-red-500" : "text-[#67BF6B]"
+        }`}
       >
-        + 2,161.42 (3.54%)
+        {diff < 0 ? formatNumber(diff) : "+ " + formatNumber(diff)} (
+        {percentage.toFixed(2)}%)
       </h1>
     </>
   );

@@ -1,6 +1,6 @@
 const ContentComponent = ({ activeTab, setActiveTab }) => {
   return (
-    <div className="pt-[60px] flex justify-between pr-[130px] items-center">
+    <div className="pt-[50px] flex justify-between pr-[130px] items-center">
       <div className="flex gap-[31px]">
         <div className="flex  gap-[10px] cursor-pointer">
           <img

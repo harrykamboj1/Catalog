@@ -13,7 +13,7 @@ const HeaderComponent = ({ latestValue }) => {
         </h1>
         <h1
           style={{ fontWeight: 500 }}
-          className="text-[#BDBEBF] w-[49px] h-[30px] font-customFont leading-[30.36px] text-2xl   p-2 bottom- left-1 inset-x-0 relative"
+          className="text-[#BDBEBF] w-[49px] h-[30px] font-customFont leading-[30.36px] text-2xl   p-2 bottom-9 left-1 inset-x-0 relative"
         >
           USD
         </h1>
